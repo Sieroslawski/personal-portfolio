@@ -1,9 +1,10 @@
 import React from 'react'
-import { NavLink, Route } from 'react-router-dom'
-import PageAbout from '../pages/PageAbout'
+import { NavLink } from 'react-router-dom'
 
 function Nav() {
   return (
+    <div className="header-wrapper">
+    <a href="/">AS</a>
     <nav>
     <ul>
         <li><NavLink to="/">Home</NavLink></li>
@@ -11,7 +12,8 @@ function Nav() {
         <li><NavLink to="/projects">Projects</NavLink></li>
     </ul>
     </nav>
+    </div>
   )
 }
 
-export default Nav
+export default Nav  
