@@ -1,11 +1,11 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
-.header-wrapper {
-    font-size: 40px;
-    background-color: red;
+.header-wrapper {    
+    background-color: $nav-color;
+    @include nav;
 }
 
-nav {
-    font-size: 40px;
+li {
+    list-style: none;
 }

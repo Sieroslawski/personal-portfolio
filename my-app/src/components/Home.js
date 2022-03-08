@@ -6,7 +6,7 @@ function HomeBody() {
          <div className="content-wrapper">
              <h1>Adrian Sieroslawski</h1>
              <p>Full-Stack Web Developer.</p>         
-         <div className="">
+         <div className="button-links">
          <a href="https://github.com/Sieroslawski">Github</a>
          <a href="https://www.linkedin.com/in/adrian-sieroslawski-7aa411228/">LinkedIn</a>
          </div>         

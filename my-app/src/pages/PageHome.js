@@ -7,8 +7,10 @@ function PageHome() {
   return (       
       <div className="App">
        <Nav/>
+       <div className="test">
        <Home/>
-       <Footer></Footer>
+       <Footer/>
+       </div>
       </div>        
   );
 }
