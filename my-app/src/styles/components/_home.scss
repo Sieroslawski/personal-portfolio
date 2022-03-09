@@ -1,7 +1,21 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
-.content-wrapper {          
-    background-color: antiquewhite;
+.content-wrapper {              
     @include home;
+    z-index: 5!important;   
 }
+
+.content-wrapper, .button-links {
+    z-index: 5;
+}
+
+canvas {
+    position: fixed;
+    width: 100%;
+    z-index: -1!important;
+}
+
+
+* { z-index: 2; }
+.particles, .particle > canvas { z-index: 1 !important; }
