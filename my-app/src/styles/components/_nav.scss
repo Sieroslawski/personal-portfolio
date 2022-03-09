@@ -17,21 +17,15 @@
       a:visited {
         text-decoration: none;
         color:white;
-      }
-      
+      }      
       a:hover {
         text-decoration: underline solid;
         transition: text-decoration 2s ease-out;
-      
+        text-decoration-thickness: 5px;      
         color: rgb(117, 116, 116);
         transition: 300ms ease-out;
               
-      }
-      
-      a:active {
-          
-      }
-
+      }           
       #initials {
           font-size: 70px;
           height: 4em;
@@ -39,8 +33,7 @@
           margin: 0;         
       }
       #initials:hover {
-        text-decoration: none;
-        
+        text-decoration: none;        
       }
      nav {
          font-size: 20px;

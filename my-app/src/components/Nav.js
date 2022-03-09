@@ -2,18 +2,17 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from "styled-components";
 
-
 const NavUnlisted = styled.li`
   .header-li {     
     li {
      text-decoration: underline;
+     text-decoration-thickness: 5px;     
      color: #5cb85c;     
     }
   }
 `;
 
 function Nav() {
-
   return (
       <header>
     <div className="header-wrapper">
