@@ -1,6 +1,7 @@
 import React from 'react'
+import Footer from '../components/Footer';
 
-function HomeBody() {
+function Home() {
   return (
       <section>
          <div className="content-wrapper">
@@ -8,11 +9,14 @@ function HomeBody() {
              <p>Full-Stack Web Developer.</p>         
          <div className="button-links">
          <a href="https://github.com/Sieroslawski">Github</a>
-         <a href="https://www.linkedin.com/in/adrian-sieroslawski-7aa411228/">LinkedIn</a>
-         </div>         
+         <a href="https://www.linkedin.com/in/adrian-sieroslawski-7aa411228/">LinkedIn</a>       
          </div>
+         <div className="footer">
+        <Footer/>
+        </div> 
+         </div>        
       </section>
-   
+    
   )
 }
-export default HomeBody
+export default Home

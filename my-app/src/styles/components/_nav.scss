@@ -3,9 +3,49 @@
 
 .header-wrapper {    
     background-color: $nav-color;
-    @include nav;
+    @include nav;   
+    background-color: #1d1d1d;   
+    color: white;
+
+    li {
+        list-style: none;
+    }
+    a:link {
+        text-decoration: none;
+      }
+      
+      a:visited {
+        text-decoration: none;
+        color:white;
+      }
+      
+      a:hover {
+        text-decoration: underline solid;
+        transition: text-decoration 2s ease-out;
+      
+        color: rgb(117, 116, 116);
+        transition: 300ms ease-out;
+              
+      }
+      
+      a:active {
+          
+      }
+
+      #initials {
+          font-size: 70px;
+          height: 4em;
+          padding-left:0.5em;          
+          margin: 0;         
+      }
+      #initials:hover {
+        text-decoration: none;
+        
+      }
+     nav {
+         font-size: 20px;
+     }         
 }
 
-li {
-    list-style: none;
-}
+
+
