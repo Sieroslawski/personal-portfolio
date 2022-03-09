@@ -5,13 +5,14 @@
     @include home;
     z-index: 5!important;
     h1 {
-        color: white;
+        color: $text-color-light;
         font-size: 80px;
         font-weight: 700;
     }
     p {
-        color: white;
+        color: $text-color-light;
         font-size: 60px;
+        margin-bottom: 10px;
     }
 }
 
@@ -33,3 +34,43 @@ canvas {
 .particles, .particle > canvas { z-index: 1 !important; }
 
 
+.button-links {      
+      a {
+        border-radius: 4px;
+        background-color: rgb(110, 108, 108);
+        border: none;
+        color: $text-color-light;
+        text-align: center;
+        font-size: 30px;
+        padding: 15px;
+        width: 180px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 15px;
+        box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+      }
+      
+      a{
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      a:after {
+        content: '»';
+        position: absolute;
+        opacity: 0;  
+        top: 14px;
+        right: -20px;
+        transition: 0.5s;
+      }      
+      a:hover{
+        padding-right: 24px;
+        padding-left:8px;
+      }      
+      a:hover:after {
+        opacity: 1;
+        right: 10px;
+      }
+}

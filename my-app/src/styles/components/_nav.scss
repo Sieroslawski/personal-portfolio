@@ -5,7 +5,7 @@
     background-color: $nav-color;
     @include nav;   
     background-color: #1d1d1d;   
-    color: white;
+    color: $text-color-light;
 
     li {
         list-style: none;
