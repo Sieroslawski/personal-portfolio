@@ -39,6 +39,10 @@
          font-size: 20px;
      }         
 }
-
-
+//Media queries
+@media only screen and (max-width: $tabletPortrait) {
+  .header-wrapper {
+     @include nav-small;
+  }
+}
 
