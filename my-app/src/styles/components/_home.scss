@@ -3,11 +3,24 @@
 
 .content-wrapper {              
     @include home;
-    z-index: 5!important;   
+    z-index: 5!important;
+    h1 {
+        color: white;
+        font-size: 80px;
+        font-weight: 700;
+    }
+    p {
+        color: white;
+        font-size: 60px;
+    }
+}
+
+.home-text, .button-links {
+    padding-top: 1.5em!important;    
 }
 
 .content-wrapper, .button-links {
-    z-index: 5;
+    z-index: 5;    
 }
 
 canvas {
@@ -16,6 +29,7 @@ canvas {
     z-index: -1!important;
 }
 
-
 * { z-index: 2; }
 .particles, .particle > canvas { z-index: 1 !important; }
+
+
