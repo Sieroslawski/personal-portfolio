@@ -230,7 +230,29 @@
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    
-  
+    flex-direction: column;      
+}
+
+@mixin about-medium {
+    box-sizing: border-box;
+    padding: 4em;
+    margin-left: 18rem;
+    position: relative;
+    z-index: 5;    
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;    
+}
+
+@mixin about-small {
+    box-sizing: border-box;
+    padding: 4em;
+    margin-left: 18rem;
+    position: relative;
+    z-index: 5;    
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;        
 }

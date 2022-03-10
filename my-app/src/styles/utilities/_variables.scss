@@ -34,11 +34,13 @@ $heading-font-weight: 600;
 }
 
 // Media Query Breakpoints
-$desktopMedium: em(1251);
+$desktopMedium: em(1200);
 $tabletLandscape: em(1024);
 $tabletPortrait: em(750);
 $phoneLandscape: em(670);
+$smallPhone : em(470);
 $phonePortrait: em(420);
+
 
 // Utility variables
 $lps: '&:hover, &:focus, &:active';

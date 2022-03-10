@@ -8,10 +8,8 @@
         margin: 0;
     }    
     .headshot {
-        width: 300px;                    
-       
-        
-        
+        width: 300px;
+        margin-top: 10px;                                          
     }
     .description {
         width: 40%;        
@@ -21,4 +19,35 @@
     }
 
 }
+//Media query
+@media only screen and (max-width: $desktopMedium) {
+    .about-wrapper {     
+        @include about-medium;
+    }
+  }
+  @media only screen and (max-width: $tabletLandscape) {
+    .about-wrapper {     
+        @include about-small;
+
+        .description {
+            width: 100%;        
+        }
+    }    
+  }
+  @media only screen and (max-width: $tabletPortrait) {
+    .about-wrapper {     
+        margin-left: 10rem;
+        .headshot {
+            width: 200px;
+            margin-top: 10px;                                          
+        }
+    }
+  }
+
+  @media only screen and (max-width: $smallPhone) {
+    .about-wrapper {     
+        margin-left: 8rem;      
+    }
+  }
+
 
