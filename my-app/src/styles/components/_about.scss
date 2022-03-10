@@ -3,6 +3,7 @@
 
 .about-wrapper {
     @include about;
+   
     height: 100vh;
     h1 {
         margin: 0;
@@ -12,10 +13,19 @@
         margin-top: 10px;                                          
     }
     .description {
-        width: 40%;        
+        width: 40%;
+        display: inline-block;
+        padding-bottom: 50px;      
     }
-    .skill-container {
-       
+    .skill-container { 
+        p {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-around;
+            align-items: center;            
+        }     
     }
 
 }
@@ -30,7 +40,11 @@
         @include about-small;
 
         .description {
-            width: 100%;        
+            width: 100%;
+            padding: 20px;       
+        }
+        .headshot {
+            margin: 0 auto;
         }
     }    
   }
