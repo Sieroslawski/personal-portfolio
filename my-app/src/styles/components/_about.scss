@@ -2,11 +2,23 @@
 @use '../utilities/mixins' as *;
 
 .about-wrapper {
-    @include home;
+    @include about;
+    height: 100vh;
     h1 {
         margin: 0;
+    }    
+    .headshot {
+        width: 300px;                    
+       
+        
+        
     }
-    img {
-        width: 400px;
+    .description {
+        width: 40%;        
     }
+    .skill-container {
+       
+    }
+
 }
+

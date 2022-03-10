@@ -220,3 +220,17 @@
     flex-wrap: wrap;
     text-align: center;   
 }
+
+@mixin about {
+    box-sizing: border-box;
+    padding: 4em;
+    margin-left: 25rem;
+    position: relative;
+    z-index: 5;    
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+  
+}
