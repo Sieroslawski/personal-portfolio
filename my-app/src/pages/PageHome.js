@@ -6,10 +6,8 @@ import Nav from '../components/Nav'
 function PageHome() {
   return (       
       <div className="App">
-       <Nav/>
-       <div className="test">
-       <Home/>       
-       </div>
+       <Nav/>      
+       <Home/>              
       </div>        
   );
 }

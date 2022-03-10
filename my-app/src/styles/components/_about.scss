@@ -1,0 +1,12 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.about-wrapper {
+    @include home;
+    h1 {
+        margin: 0;
+    }
+    img {
+        width: 400px;
+    }
+}
