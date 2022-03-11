@@ -1,21 +1,41 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Lato&family=Pacifico&display=swap');
+
+
+.about {
+    background-color: rgb(92, 90, 90);    
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin: 0 auto;   
+}
 
 .about-wrapper {
-    @include about;
-   
+    @include about;    
+    min-height: 1450px;
     height: 100vh;
+    font-family: 'Fredoka', sans-serif;
+ 
     h1 {
-        margin: 0;
-    }    
+        margin: 0;        
+    }
+    h1,h2 {
+        color: $text-color-light;
+        font-size: 3em;
+    }
+    p {
+        color: $text-color-light;
+    }   
     .headshot {
         width: 300px;
-        margin-top: 10px;                                          
+        margin-top: 5em;
+        box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.41);
+          
     }
     .description {
         width: 40%;
         display: inline-block;
-        padding-bottom: 50px;      
+        padding-bottom: 50px;     
     }
     .skill-container { 
         p {
@@ -48,6 +68,7 @@
         }
     }    
   }
+
   @media only screen and (max-width: $tabletPortrait) {
     .about-wrapper {     
         margin-left: 10rem;
@@ -63,5 +84,94 @@
         margin-left: 8rem;      
     }
   }
+
+  @media only screen and (max-width: 1636px) {
+    .about-wrapper {     
+        min-height: 1500px;     
+    }
+  }
+
+  @media only screen and (max-width: 1375px) {
+    .about-wrapper {     
+        min-height: 1600px;     
+    }
+  }
+
+  @media only screen and (max-width: 1093px) {
+    .about-wrapper {     
+        min-height: 1650px;     
+    }
+  }
+
+  @media only screen and (max-width: 1036px) {
+    .about-wrapper {     
+        min-height: 1950px;     
+    }
+  }
+
+  @media only screen and (max-width: 871px) {
+    .about-wrapper {     
+        min-height: 1950px;     
+    }
+  }
+
+  @media only screen and (max-width: 810px) {
+    .about-wrapper {     
+        min-height: 2000px;     
+    }
+  }
+
+  @media only screen and (max-width: 562px) {
+    .about-wrapper {     
+        min-height: 2200px;     
+    }
+  }
+
+  @media only screen and (max-width: 539px) {
+    .about-wrapper {     
+        min-height: 2550px;     
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .about-wrapper {     
+        min-height: 2500px;     
+    }
+  }
+
+  .html5-icon {
+      color: orange;
+  }
+
+  .css-icon {
+      color: royalblue;
+  }
+
+  .sass-icon {
+      color: plum;
+  }
+
+  .js-icon {
+      color: rgb(255, 217, 0);
+  }
+
+  .react-icon {
+      color: #61DBFB;
+  }
+
+  .angular-icon {
+      color: #dd1b16;
+  }
+
+  .sql-icon {
+      color: rgb(53, 53, 223);
+  }
+
+  .aws-icon {
+      color: orange;
+  }
+
+
+
 
 
