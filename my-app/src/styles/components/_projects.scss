@@ -19,23 +19,13 @@
         color: white;
         padding-top: 2em;
         margin-left: 5em;
+        font-size: 3em;
     }
 }
 
 
 .cards-wrapper {  
-    height: 100vh;
-    font-family: "Fredoka", sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    margin-left: 18em;
-    margin-right: 3em;
-    margin-top: 4em;   
-    
+   @include cards-wrapper;          
 }
 
 .card-component {
@@ -54,7 +44,7 @@
     }
     .projects {
         h1{
-            margin-left: 6em;
+            margin-left: 5em;
         }
     }
   }
@@ -69,7 +59,7 @@
     .projects {     
         min-height: 3150px;
         h1{
-            margin-left: 6.5em; 
+            margin-left: 5.5em; 
         }     
     }
     .cards-wrapper {     
@@ -84,7 +74,7 @@
     }
     .projects {
         h1{
-            margin-left: 4.5em;
+            margin-left: 3.5em;
         }
     }
   }
@@ -99,6 +89,7 @@
     .projects {
         h1{
             margin-left: 5em;
+            font-size: 2em;
         }
     }
 
