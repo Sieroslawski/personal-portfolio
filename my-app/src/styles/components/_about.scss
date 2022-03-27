@@ -25,10 +25,11 @@
     }
     p {
         color: $text-color-light;
+        margin-top: 10px;
     }   
     .headshot {
         width: 300px;
-        margin-top: 5em;
+        margin-top: 4.5em;
         box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.41);
           
     }
@@ -45,7 +46,13 @@
             align-content: center;
             justify-content: space-around;
             align-items: center;            
-        }     
+        }
+        hr {
+            margin: 1rem 0;
+            color: white;
+            background-color: currentColor;            
+            opacity: 1;
+        }
     }
 
 }

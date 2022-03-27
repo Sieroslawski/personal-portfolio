@@ -52,7 +52,8 @@ function About() {
             <hr/>
             <p>SQL <FontAwesomeIcon icon={solid('database')}  size="3x" className="sql-icon"/></p>
             <hr/>
-            <p>AWS <FontAwesomeIcon icon={brands('aws')}  size="3x" className="aws-icon"/></p>           
+            <p>AWS <FontAwesomeIcon icon={brands('aws')}  size="3x" className="aws-icon"/></p>
+            <hr/>         
         </div>
         </div>
         <div className="headshot">

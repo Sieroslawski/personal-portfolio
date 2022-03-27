@@ -4,8 +4,9 @@ import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage, MDBBtn, 
 function Projects() {
   return (
    <section className="projects">
-   <div className="cards-wrapper">
-    <MDBCard style={{ maxWidth: '22rem' }}>
+    <h1>Projects</h1>
+   <div className="cards-wrapper">  
+    <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
         <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' fluid alt='...' />
         <a>
@@ -17,10 +18,10 @@ function Projects() {
         <MDBCardText>
           Some quick example text to build on the card title and make up the bulk of the card's content.
         </MDBCardText>
-        <MDBBtn href='#'>Button</MDBBtn>
+        <MDBBtn href='#' color='success'>Button</MDBBtn>
       </MDBCardBody>
     </MDBCard>
-    <MDBCard style={{ maxWidth: '22rem' }}>
+    <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
         <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' fluid alt='...' />
         <a>
@@ -32,10 +33,10 @@ function Projects() {
         <MDBCardText>
           Some quick example text to build on the card title and make up the bulk of the card's content.
         </MDBCardText>
-        <MDBBtn href='#'>Button</MDBBtn>
+        <MDBBtn href='#' color='success'>Button</MDBBtn>
       </MDBCardBody>
     </MDBCard>
-    <MDBCard style={{ maxWidth: '22rem' }}>
+    <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
         <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' fluid alt='...' />
         <a>
@@ -47,10 +48,10 @@ function Projects() {
         <MDBCardText>
           Some quick example text to build on the card title and make up the bulk of the card's content.
         </MDBCardText>
-        <MDBBtn href='#'>Button</MDBBtn>
+        <MDBBtn href='#' color='success'>Button</MDBBtn>
       </MDBCardBody>
     </MDBCard>
-    <MDBCard style={{ maxWidth: '22rem' }}>
+    <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
         <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' fluid alt='...' />
         <a>
@@ -62,10 +63,10 @@ function Projects() {
         <MDBCardText>
           Some quick example text to build on the card title and make up the bulk of the card's content.
         </MDBCardText>
-        <MDBBtn href='#'>Button</MDBBtn>
+        <MDBBtn href='#' color='success'>Button</MDBBtn>
       </MDBCardBody>
     </MDBCard>
-    <MDBCard style={{ maxWidth: '22rem' }}>
+    <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
         <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' fluid alt='...' />
         <a>
@@ -77,10 +78,10 @@ function Projects() {
         <MDBCardText>
           Some quick example text to build on the card title and make up the bulk of the card's content.
         </MDBCardText>
-        <MDBBtn href='#'>Button</MDBBtn>
+        <MDBBtn href='#' color='success'>Button</MDBBtn>
       </MDBCardBody>
     </MDBCard>
-    <MDBCard style={{ maxWidth: '22rem' }}>
+    <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
         <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' fluid alt='...' />
         <a>
@@ -92,7 +93,7 @@ function Projects() {
         <MDBCardText>
           Some quick example text to build on the card title and make up the bulk of the card's content.
         </MDBCardText>
-        <MDBBtn href='#'>Button</MDBBtn>
+        <MDBBtn href='#' color='success'>Button</MDBBtn>
       </MDBCardBody>
     </MDBCard>
     </div>

@@ -7,10 +7,11 @@
     background-size: auto;
     margin: 0 auto;
     height: 100vh;
+    min-height: 1250px;
+    box-sizing: border-box;
 }
 
 .cards-wrapper {  
-
     height: 100vh;
     font-family: "Fredoka", sans-serif;
     display: flex;
@@ -19,5 +20,53 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    margin-left: 18em;
+    margin-right: 3em;
+    margin-top: 4em;   
+    
 }
+
+.card-component {
+    margin: 20px;
+}
+
+@media only screen and (max-width: 1636px) {
+    .projects {     
+        min-height: 1500px;     
+    }
+  }
+
+  @media only screen and (max-width: 1525px) {
+    .cards-wrapper {     
+        padding-top: 30em;     
+    }
+  }
+
+  @media only screen and (max-width: 1375px) {
+    .projects {     
+        min-height: 1600px;     
+    }
+  }
+
+  @media only screen and (max-width: 1136px) {
+    .projects {     
+        min-height: 3150px;     
+    }
+    .cards-wrapper {     
+        padding-top: 90em;     
+    }
+  }
+
+  @media only screen and (max-width: 746px) {
+    .cards-wrapper {
+        margin-left: 15em;
+        margin-right: 6em;
+    }
+  }
+  @media only screen and (max-width: 746px) {
+    .cards-wrapper {
+        margin-left: 10em;
+        margin-right: 0;
+    }
+  }
 
