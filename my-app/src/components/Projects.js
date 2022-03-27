@@ -4,7 +4,7 @@ import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage, MDBBtn, 
 function Projects() {
   return (
    <section className="projects">
-    <h1>Projects</h1>
+    <h1 id="projects-header">Projects</h1>
    <div className="cards-wrapper">  
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
