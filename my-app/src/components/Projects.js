@@ -1,11 +1,12 @@
 import React from 'react'
 import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage, MDBBtn, MDBRipple } from 'mdb-react-ui-kit';
+import { MDBPagination, MDBPaginationItem, MDBPaginationLink } from 'mdb-react-ui-kit';
 
 function Projects() {
   return (
    <section className="projects">
     <h1 id="projects-header">Projects</h1>
-   <div className="cards-wrapper">  
+   <div className="cards-wrapper">     
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
         <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' fluid alt='...' />
@@ -14,11 +15,11 @@ function Projects() {
         </a>
       </MDBRipple>
       <MDBCardBody>
-        <MDBCardTitle>Card title</MDBCardTitle>
+        <MDBCardTitle>Movie Mania</MDBCardTitle>
         <MDBCardText>
-          Some quick example text to build on the card title and make up the bulk of the card's content.
+          A movie viewer application written in React.
         </MDBCardText>
-        <MDBBtn href='#' color='success'>Button</MDBBtn>
+        <MDBBtn href='#' color='success'>Details</MDBBtn>
       </MDBCardBody>
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
@@ -29,11 +30,11 @@ function Projects() {
         </a>
       </MDBRipple>
       <MDBCardBody>
-        <MDBCardTitle>Card title</MDBCardTitle>
+        <MDBCardTitle>Employee Organizer</MDBCardTitle>
         <MDBCardText>
-          Some quick example text to build on the card title and make up the bulk of the card's content.
+          Used LINQ queries and C# to create an employee management system with a SQLite database.
         </MDBCardText>
-        <MDBBtn href='#' color='success'>Button</MDBBtn>
+        <MDBBtn href='#' color='success'>Details</MDBBtn>
       </MDBCardBody>
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
@@ -44,11 +45,11 @@ function Projects() {
         </a>
       </MDBRipple>
       <MDBCardBody>
-        <MDBCardTitle>Card title</MDBCardTitle>
+        <MDBCardTitle>Weather Viewer</MDBCardTitle>
         <MDBCardText>
-          Some quick example text to build on the card title and make up the bulk of the card's content.
+          A weather viewing application written in vanilla Javascript.
         </MDBCardText>
-        <MDBBtn href='#' color='success'>Button</MDBBtn>
+        <MDBBtn href='#' color='success'>Details</MDBBtn>
       </MDBCardBody>
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
@@ -59,11 +60,11 @@ function Projects() {
         </a>
       </MDBRipple>
       <MDBCardBody>
-        <MDBCardTitle>Card title</MDBCardTitle>
+        <MDBCardTitle>ThriftBook</MDBCardTitle>
         <MDBCardText>
-          Some quick example text to build on the card title and make up the bulk of the card's content.
+          An MVC project created by four students with a multitude of features.
         </MDBCardText>
-        <MDBBtn href='#' color='success'>Button</MDBBtn>
+        <MDBBtn href='#' color='success'>Details</MDBBtn>
       </MDBCardBody>
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
@@ -74,11 +75,11 @@ function Projects() {
         </a>
       </MDBRipple>
       <MDBCardBody>
-        <MDBCardTitle>Card title</MDBCardTitle>
+        <MDBCardTitle>Produce - Supplier</MDBCardTitle>
         <MDBCardText>
-          Some quick example text to build on the card title and make up the bulk of the card's content.
+          A program to manage suppliers and produce written in Angular, with a C# backend.
         </MDBCardText>
-        <MDBBtn href='#' color='success'>Button</MDBBtn>
+        <MDBBtn href='#' color='success'>Details</MDBBtn>
       </MDBCardBody>
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
@@ -89,13 +90,13 @@ function Projects() {
         </a>
       </MDBRipple>
       <MDBCardBody>
-        <MDBCardTitle>Card title</MDBCardTitle>
+        <MDBCardTitle>Angular-Movies</MDBCardTitle>
         <MDBCardText>
-          Some quick example text to build on the card title and make up the bulk of the card's content.
+          Another movie-viewing application, but written in Angular.
         </MDBCardText>
-        <MDBBtn href='#' color='success'>Button</MDBBtn>
+        <MDBBtn href='#' color='success'>Details</MDBBtn>
       </MDBCardBody>
-    </MDBCard>
+    </MDBCard>  
     </div>
    </section>
   )

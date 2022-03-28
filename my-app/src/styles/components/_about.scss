@@ -1,6 +1,6 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Lato&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Fredoka:wght@300;400&family=Lato&family=Pacifico&display=swap');
 
 
 .about {
@@ -17,15 +17,18 @@
     font-family: 'Fredoka', sans-serif;
  
     h1 {
-        margin: 0;        
+        margin: 0;
+               
     }
     h1,h2 {
         color: $text-color-light;
         font-size: 3em;
+        font-family: 'Cairo', sans-serif
     }
     p {
         color: $text-color-light;
         margin-top: 10px;
+        font-family: 'Cairo', sans-serif
     }   
     .headshot {
         width: 300px;
