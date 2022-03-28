@@ -7,8 +7,8 @@
     background-size: auto;
     margin: 0 auto;
     height: 100vh;
-    min-height: 1250px;
-    box-sizing: border-box;   
+    min-height: 1450px;
+    box-sizing: border-box;  
     h1 {
         display: flex;
         flex-direction: row;
@@ -39,11 +39,12 @@
     }
   }
 
-  @media only screen and (max-width: 1525px) {
+  @media only screen and (max-width: 1528px) {
     .cards-wrapper {     
         padding-top: 30em;     
     }
     .projects {
+        min-height: 1950px;
         h1{
             margin-left: 5em;
         }
@@ -52,19 +53,19 @@
 
   @media only screen and (max-width: 1375px) {
     .projects {     
-        min-height: 1600px;     
+        min-height: 2000px;     
     }
   }
 
   @media only screen and (max-width: 1136px) {
     .projects {     
-        min-height: 3150px;
+        min-height: 3750px;
         h1{
             margin-left: 5.5em; 
         }     
     }
     .cards-wrapper {     
-        padding-top: 90em;     
+        padding-top: 100em;     
     }
   }
 
@@ -82,7 +83,7 @@
   @media only screen and (max-width: 746px) {
     .cards-wrapper {
         margin-left: 10em;
-        margin-right: 0;
+        margin-right: 0;         
     }
   }
 
@@ -91,6 +92,21 @@
         h1{
             margin-left: 5em;
             font-size: 2em;
+        }
+    }
+
+    .cards-wrapper {      
+      padding-top: 1260px!important;
+    }
+  }
+
+  @media only screen and (max-width: 414px) {
+    .projects {
+        min-height: 3050px;
+        h1{
+            margin-left: 5em;
+            font-size: 2em;
+            padding-bottom: 1.5em;
         }
     }
 
