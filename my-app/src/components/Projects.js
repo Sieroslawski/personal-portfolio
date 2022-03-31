@@ -41,7 +41,7 @@ function Projects() {
         <MDBCardText>
           Used LINQ queries and C# to create an employee management system with a SQLite database.
         </MDBCardText>
-        <MDBBtn href='#' color='success'>Details</MDBBtn>
+        <NavLink to="/employee-organizer"><MDBBtn href='#' color='success'>Details</MDBBtn></NavLink>
       </MDBCardBody>
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
@@ -56,7 +56,7 @@ function Projects() {
         <MDBCardText>
           A weather viewing application written in vanilla Javascript.
         </MDBCardText>
-        <MDBBtn href='#' color='success'>Details</MDBBtn>
+        <NavLink to="/weather-viewer"><MDBBtn href='#' color='success'>Details</MDBBtn></NavLink>
       </MDBCardBody>
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
@@ -71,7 +71,7 @@ function Projects() {
         <MDBCardText>
           An MVC project created by four students with a multitude of features.
         </MDBCardText>
-        <MDBBtn href='#' color='success'>Details</MDBBtn>
+        <NavLink to="/thrift-book"><MDBBtn href='#' color='success'>Details</MDBBtn></NavLink>
       </MDBCardBody>
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
@@ -86,7 +86,7 @@ function Projects() {
         <MDBCardText>
           A program to manage suppliers and produce written in Angular, with a C# backend.
         </MDBCardText>
-        <MDBBtn href='#' color='success'>Details</MDBBtn>
+        <NavLink to="/produce-supplier"><MDBBtn href='#' color='success'>Details</MDBBtn></NavLink>
       </MDBCardBody>
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
@@ -101,7 +101,7 @@ function Projects() {
         <MDBCardText>
           Another movie-viewing application, but written in Angular.
         </MDBCardText>
-        <MDBBtn href='#' color='success'>Details</MDBBtn>
+        <NavLink to="/produce-supplier"><MDBBtn href='#' color='success'>Details</MDBBtn></NavLink>
       </MDBCardBody>
     </MDBCard>  
     </div>
