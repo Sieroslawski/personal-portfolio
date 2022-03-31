@@ -1,0 +1,9 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.projects-wrapper {
+    background-color: rgb(92, 90, 90);    
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin: 0 auto;
+}

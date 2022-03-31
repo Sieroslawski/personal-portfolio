@@ -28,7 +28,8 @@
     p {
         color: $text-color-light;
         margin-top: 10px;
-        font-family: 'Cairo', sans-serif
+        font-family: 'Cairo', sans-serif;
+        min-width: 130px;
     }   
     .headshot {
         width: 300px;
