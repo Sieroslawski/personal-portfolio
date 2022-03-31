@@ -7,3 +7,9 @@ footer {
     z-index: 6;
     
 }
+
+@media only screen and (max-width: 414px) { 
+    footer {
+        font-size: 13px;
+    }
+}
