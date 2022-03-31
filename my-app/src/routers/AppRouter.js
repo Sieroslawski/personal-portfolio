@@ -4,6 +4,7 @@ import PageHome from '../pages/PageHome';
 import PageAbout from '../pages/PageAbout';
 import PageProjects from '../pages/PageProjects';
 import PageError from '../pages/PageError';
+import PageMovieMania from '../pages-sub/PageMovieMania';
 
 function AppRouter() {
   return (
@@ -12,6 +13,7 @@ function AppRouter() {
         <Route path="/" element={<PageHome/>}/>
         <Route path="/about" element={<PageAbout/>}/>
         <Route path="/projects" element={<PageProjects/>}/>
+        <Route path="/movie-mania" element={<PageMovieMania/>}/>
         <Route path="*" element={<PageError/>}/>
     </Routes>
     </BrowserRouter>

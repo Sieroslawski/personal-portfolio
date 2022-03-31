@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage, MDBBtn, MDBRipple } from 'mdb-react-ui-kit';
 import 'animate.css';
 import movieManiaReact from '../images/movie-mania.jpeg';
@@ -15,7 +16,7 @@ function Projects() {
    <div className="cards-wrapper animate__animated animate__fadeIn">     
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-        <MDBCardImage src={movieManiaReact} fluid alt='...' />
+      <MDBCardImage src={movieManiaReact} fluid alt='...' />    
         <a>
           <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
         </a>
@@ -25,7 +26,7 @@ function Projects() {
         <MDBCardText>
           A movie viewer application written in React.
         </MDBCardText>
-        <MDBBtn href='#' color='success'>Details</MDBBtn>
+        <NavLink to="/movie-mania"><MDBBtn href='/movie-mania' color='success'>Details</MDBBtn></NavLink>  
       </MDBCardBody>
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
