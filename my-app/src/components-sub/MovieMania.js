@@ -1,4 +1,9 @@
 import React from 'react'
+import fullScreen from '../images/full.png'
+import tablet from '../images/tablet.png'
+import phone from '../images/phone.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 function MovieMania() {
   return (
@@ -6,10 +11,12 @@ function MovieMania() {
      <div className="projects-wrapper">
        <header className="projects-header">
        <h1>Movie Mania</h1>
-       <a href="#">Github link here</a>
-       <a href="#">Website link here</a>
+       <a href="https://github.com/Sieroslawski" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
+       <a href="#"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
        </header>
-       <img src="https://static01.nyt.com/images/2017/09/01/books/review/31PEPE2/31PEPE2-jumbo.jpg"/>       
+       <img src={fullScreen} className="fullscreen-img"/>
+       <img src={tablet} className="tablet-img"/>  
+       <img src={phone} className="phone-img"/>        
        <article className="project-overview">
          <h1>Overview</h1>
          <p>A description of the project.</p>

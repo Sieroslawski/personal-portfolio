@@ -6,4 +6,34 @@
     background-repeat: no-repeat;
     background-size: auto;
     margin: 0 auto;
+    padding-left: 12em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 1.2em;   
+    height: 100vh;
+    min-height: 1250px;
+    a {
+        color: $text-color-light;
+    }
+    a:nth-of-type(2n){       
+        padding-left: 20px;
+    }
+
+    h1 {
+        font-family: 'Cairo', sans-serif;
+        padding-top: 1em;
+    }    
+    .fullscreen-img {
+        max-width: 794px;
+        margin-top: 3em;
+    }
+    .tablet-img, .phone-img {
+        display: none;
+    }
 }
