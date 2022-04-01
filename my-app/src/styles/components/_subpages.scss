@@ -20,20 +20,40 @@
     min-height: 1250px;
     a {
         color: $text-color-light;
+        
     }
     a:nth-of-type(2n){       
         padding-left: 20px;
+    }
+    a:hover {
+        color: rgb(116, 9, 255);
+        transition: 300ms ease-out;
     }
 
     h1 {
         font-family: 'Cairo', sans-serif;
         padding-top: 1em;
     }    
-    .fullscreen-img {
-        max-width: 794px;
+    .fullscreen-img {        
         margin-top: 3em;
+        max-width: 794px;
     }
+
+    article {
+        max-width: 794px;
+    }
+
     .tablet-img, .phone-img {
         display: none;
+    }
+
+    .project-tech {
+        display: flex;
+        p{
+            padding-top: 15px;
+        }
+        p:not(:first-child) {            
+            padding-left: 20px;
+        }
     }
 }

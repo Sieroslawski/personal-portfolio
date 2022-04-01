@@ -19,7 +19,8 @@ function MovieMania() {
        <img src={phone} className="phone-img"/>        
        <article className="project-overview">
          <h1>Overview</h1>
-         <p>A description of the project.</p>
+         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
        </article>
        <article className="project-features">
           <h1>Features</h1>
@@ -32,7 +33,10 @@ function MovieMania() {
           </ul>
        </article>
        <article className="project-tech">
-         <p>insert icons here</p>
+       <p><FontAwesomeIcon icon={brands('html5')}  size="3x" className="html5-icon"/></p>
+       <p><FontAwesomeIcon icon={brands('sass')}  size="3x" className="sass-icon"/></p>
+       <p><FontAwesomeIcon icon={brands('js')}  size="3x" className="js-icon"/></p>
+       <p><FontAwesomeIcon icon={brands('react')}  size="3x" className="react-icon"/></p>
        </article>
      </div>
    </section>
