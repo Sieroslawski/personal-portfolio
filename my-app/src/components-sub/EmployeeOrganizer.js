@@ -1,34 +1,39 @@
 import React from 'react'
 import tablet from '../images/tablet.png'
+import { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import 'animate.css';
 
 function EmployeeOrganizer() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section>
     <div className="projects-wrapper">
-      <header className="projects-header">
+      <header className="projects-header animate__animated animate__fadeIn">
       <h1>Employee Organizer</h1>
       <a href="https://github.com/Sieroslawski" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
       <a href="#"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
       </header>     
-      <img src={tablet} className="tablet-img" className="fullscreen-img" id="employee-org-img"/>            
-      <article className="project-overview">
+      <img src={tablet} className="tablet-img" className="fullscreen-img animate__animated animate__fadeIn" id="employee-org-img"/>            
+      <article className="project-overview animate__animated animate__fadeIn">
         <h1>Overview</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p>Employee-Organizer was the final project I developed for our C# courses. This command line program allows you to
+          perform CRUD operations using LINQ queries to organize the employees in an organization, as well as add create new organizations.
+        </p>
       </article>
-      <article className="project-features">
+      <article className="project-features animate__animated animate__fadeIn">
          <h1>Features</h1>
          <ul>
-           <li>feature 1</li>
-           <li>feature 2</li>
-           <li>feature 3</li>
-           <li>feature 4</li>
-           <li>feature 5</li>
+           <li>Create, read, update, delete employees in an database.</li>
+           <li>Add organizations.</li>   
          </ul>
       </article>
-      <article className="project-tech">     
+      <article className="project-tech animate__animated animate__fadeIn">     
       <p><svg fill="none" height="42px" viewBox="204.925 153.577 757.617 860.543" width="42px" xmlns="http://www.w3.org/2000/svg">
       <path d="m962.541 407.983c0-14.237-3.034-27.074-9.336-37.811-6.068-10.736-15.171-19.605-27.307-26.607-100.829-58.117-201.891-116.233-302.72-174.35-27.308-15.638-53.449-15.171-80.523.7-40.145 23.574-241.336 138.873-301.086 173.65-24.741 14.237-36.644 36.177-36.644 64.652v351.033c0 14.004 3.034 26.374 8.869 37.111 6.069 10.97 15.405 20.306 27.775 27.541 59.984 34.777 260.941 149.843 301.086 173.65 27.074 15.868 53.448 16.568 80.523.7 100.829-58.35 201.891-116.233 302.72-174.35 12.603-7.235 21.706-16.338 27.774-27.541 5.835-10.737 8.869-23.107 8.869-37.111z" fill="#9a4993"/>
       <path d="m584.667 582.333-371.34 213.794c6.069 10.97 15.405 20.306 27.775 27.542 59.984 34.776 260.941 149.842 301.086 173.649 27.074 15.872 53.449 16.572 80.523.7 100.829-58.35 201.891-116.233 302.72-174.349 12.603-7.236 21.706-16.338 27.774-27.542z" fill="#6a1577"/><path d="m474.735 645.584c21.707 37.811 62.318 63.252 108.765 63.252 46.913 0 87.758-25.674 109.231-63.952l-108.064-62.551z" fill="#6a1577"/>

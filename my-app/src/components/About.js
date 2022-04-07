@@ -1,20 +1,26 @@
 import React from 'react'
+import { useEffect } from 'react'
 import image from '../images/Adrian Sieroslawski (1).jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import 'animate.css';
 
 function About() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section className="about" >
         <div className="about-wrapper animate__animated animate__fadeIn">                     
         <div className="description">
         <h1 className="title-description">About Me</h1>               
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        It has survived not only five centuries, but also the leap into electronic typesetting, 
-        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Hey, I'm Adrian. I've always been someone who enjoyed tinkering with computers and software, which has led me down the path of pursuing software development</p>
+        <p> I initially began by watching tutorials online about basic web development, and decided I wanted to pursue more formal and in-depth training in full-stack development. That decision
+          lead me to becoming a graduate at the Software Systems Developer (2022) program at BCIT. In this program we gained hands-on experience developing
+           a number of RESTful applications with the technologies listed below.
+        </p>
         <div className="skill-container">         
             <h2 className="title-description">Skills</h2>
             <p>HTML5 <FontAwesomeIcon icon={brands('html5')}  size="3x" className="html5-icon"/></p>

@@ -1,36 +1,48 @@
 import React from 'react'
+import { useEffect } from 'react'
 import fullScreen from '../images/thriftbook-desktop.png'
 import phone from '../images/thriftbook-phone.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import 'animate.css';
 
 function ThriftBook() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section>
-    <div className="projects-wrapper">
+    <div className="projects-wrapper animate__animated animate__fadeIn" id="pj">
       <header className="projects-header">
       <h1>ThriftBook</h1>
       <a href="https://github.com/Sieroslawski" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
       <a href="#"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
       </header>
-      <img src={fullScreen} className="fullscreen-img" id="full-screen"/>
+      <img src={fullScreen} className="fullscreen-img animate__animated animate__fadeIn" id="full-screen"/>
        <img src={phone}  id="phone-img"/>         
-      <article className="project-overview">
+      <article className="project-overview animate__animated animate__fadeIn">
         <h1>Overview</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p>This is a project developed by my self and three other students using MVC in ASP.net + SQL backend with CSS + Bootstrap for styling. 
+          It's a fully functioning used book store that uses paypal to allow you to purchase books, with all other features you would find in an online store.</p>
       </article>
-      <article className="project-features">
+      <article className="project-features animate__animated animate__fadeIn">
          <h1>Features</h1>
          <ul>
-           <li>feature 1</li>
-           <li>feature 2</li>
-           <li>feature 3</li>
-           <li>feature 4</li>
-           <li>feature 5</li>
+           <li>Email and user registration features.</li>
+           <li>Paypal integration.</li>
+           <li>Invoicing system + download to CSV file</li>
+           <li>Sort books by genre, author and price.</li>
+           <li>View lists of all customers.</li>
+           <li>Book rating system.</li>
+           <li>Search inventory feature.</li>
+           <li>Fully functioning add to cart system.</li>
+           <li>Manager area for administrative functions that aren't visible to the user</li>
+           <li>Fully responsive.</li>
          </ul>
       </article>
-      <article className="project-tech">    
+      <article className="project-tech animate__animated animate__fadeIn">    
       <p><FontAwesomeIcon icon={brands('js')}  size="3x" className="js-icon"/></p>
       <p><svg width="52px" height="52px" enable-background="new 0 0 504 504" id="Layer_1" version="1.1" viewBox="0 0 504 504">
       <path d="M454.6,256.6c-9.2,58.5-27.1,75.6-58.8,114.9c-31.7,33.3-77.3,88.9-141.9,85.8  c-58.5-9.2-75.6-27.1-114.9-58.8c-33.3-31.7-88.9-77.3-85.8-141.9c9.2-58.5,27.1-75.6,58.8-114.9c31.7-33.3,77.3-88.9,141.9-85.8  c58.5,9.2,75.6,27.1,114.9,58.8C402.1,146.4,457.7,192,454.6,256.6z" fill="#3765AF"/><g>

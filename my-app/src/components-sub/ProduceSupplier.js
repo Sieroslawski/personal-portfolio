@@ -1,13 +1,20 @@
 import React from 'react'
 import fullScreen from '../images/ps-desktop.png'
+import { useEffect } from 'react'
 import phone from '../images/ps-phone.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import 'animate.css';
 
 function ProduceSupplier() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section>
-    <div className="projects-wrapper">
+    <div className="projects-wrapper animate__animated animate__fadeIn">
       <header className="projects-header">
       <h1>Produce-Supplier</h1>
       <a href="https://github.com/Sieroslawski" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
@@ -17,17 +24,15 @@ function ProduceSupplier() {
        <img src={phone}  id="phone-img"/>            
       <article className="project-overview">
         <h1>Overview</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p>Implemented an ASP.NET Core API backend (with SQL) 
+          and an Angular frontend to create a functional and user-friendly customer ordering management system.</p>
       </article>
       <article className="project-features">
          <h1>Features</h1>
          <ul>
-           <li>feature 1</li>
-           <li>feature 2</li>
-           <li>feature 3</li>
-           <li>feature 4</li>
-           <li>feature 5</li>
+           <li>Create, read, update, delete produce in the database</li>
+           <li>Create, read, update, delete suppliers in the database</li>
+           <li>Fully responsive</li>         
          </ul>
       </article>
       <article className="project-tech">
@@ -46,6 +51,7 @@ function ProduceSupplier() {
       <path d="m692.731 644.884c-21.472 38.044-62.317 63.952-109.231 63.952-46.68 0-87.291-25.441-108.764-63.252-10.503-18.438-16.572-39.444-16.572-62.084 0-69.32 56.016-125.336 125.336-125.336 46.213 0 86.592 25.207 108.298 62.551l109.464-63.018c-43.645-75.154-124.869-125.802-217.995-125.802-139.107 0-251.605 112.732-251.605 251.605 0 45.513 12.136 88.459 33.376 125.336 43.412 75.388 125.102 126.269 218.462 126.269 93.594 0 175.284-51.114 218.696-126.969zm138.406-120.901h-24.974v120.668h24.974zm55.316 0h-24.974v120.668h24.974z"/>
       <path d="m906.759 544.289h-120.668v24.974h120.668zm0 55.082h-120.668v24.974h120.668z"/></g></svg></p>
       <p><FontAwesomeIcon icon={brands('css3')}  size="3x" className="css-icon"/></p>
+      <p><FontAwesomeIcon icon={solid('database')}  size="3x" className="sql-icon"/></p>
       </article>
     </div>
   </section>

@@ -17,8 +17,7 @@
         align-items: center;
         justify-content: center;
         color: white;
-        padding-top: 2em;
-        padding-bottom: 2em;
+        padding-top: 2em;       
         margin-left: 5em;
         font-size: 3em;
         font-family: 'Cairo', sans-serif    
@@ -32,6 +31,12 @@
 
 .card-component {
     margin: 20px;
+}
+
+@media only screen and (min-width: 1136px) {
+    .cards-wrapper {
+        margin-top: 16em;   
+    }
 }
 
 @media only screen and (max-width: 1636px) {

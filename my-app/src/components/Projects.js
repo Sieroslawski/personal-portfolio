@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useEffect } from 'react';
 import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage, MDBBtn, MDBRipple } from 'mdb-react-ui-kit';
 import 'animate.css';
 import movieManiaReact from '../images/movie-mania.jpeg';
@@ -10,6 +11,11 @@ import ps from '../images/ps.png'
 import am from '../images/am.jpeg';
 
 function Projects() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
    <section className="projects">
     <h1 id="projects-header">Projects</h1>

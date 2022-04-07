@@ -21,7 +21,7 @@ function Nav() {
     <nav>
     <ul>    
         <NavLink to="/" className={(navData => (navData.isActive ? "header-li" : 'none'))}><li>Home</li></NavLink>
-        <NavLink to="/about" className={(navData => (navData.isActive ? "header-li" : 'none'))}><li>About Me</li></NavLink>
+        <NavLink to="/about" className={(navData => (navData.isActive ? "header-li" : 'none'))}><li>About</li></NavLink>
         <NavLink to="/projects" className={(navData => (navData.isActive ? "header-li" : 'none'))}><li>Projects</li></NavLink>
     </ul>
     </nav>

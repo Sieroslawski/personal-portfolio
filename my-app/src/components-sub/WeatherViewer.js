@@ -1,34 +1,41 @@
 import React from 'react'
+import { useEffect } from 'react'
 import tablet from '../images/weather-tablet.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import 'animate.css'
 
 function WeatherViewer() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section>
-    <div className="projects-wrapper">
-      <header className="projects-header">
+    <div className="projects-wrapper" id="wv">
+      <header className="projects-header animate__animated animate__fadeIn">
       <h1>Weather Viewer</h1>
       <a href="https://github.com/Sieroslawski" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
       <a href="#"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
       </header>         
-      <img src={tablet} className="tablet-img" className="fullscreen-img" id="employee-org-img"/>       
-      <article className="project-overview">
+      <img src={tablet} className="tablet-img" className="fullscreen-img animate__animated animate__fadeIn" id="employee-org-img"/>       
+      <article className="project-overview animate__animated animate__fadeIn">
         <h1>Overview</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p>Weather-Viewer is a project I created when I was teaching myself vanilla javascript and CSS during the first wave of COVID during lockdowns. 
+          This program allows you to query the openweather API and view weather data hourly, current weather and for the next 7 days, as well as convert from celsius to fahreinheit.
+          No guides or tutorials were used when creating this, I simply started coding and using Google until it was a completed project.</p>
       </article>
-      <article className="project-features">
+      <article className="project-features animate__animated animate__fadeIn">
          <h1>Features</h1>
          <ul>
-           <li>feature 1</li>
-           <li>feature 2</li>
-           <li>feature 3</li>
-           <li>feature 4</li>
-           <li>feature 5</li>
+           <li>View current weather</li>
+           <li>View hourly weather for the next 24 hours</li>
+           <li>View next 7 days</li>
+           <li>Convert tempuratures between Celcius and Fahreinheit</li>           
          </ul>
       </article>
-      <article className="project-tech">
+      <article className="project-tech animate__animated animate__fadeIn">
       <p><FontAwesomeIcon icon={brands('html5')}  size="3x" className="html5-icon"/></p>    
       <p><FontAwesomeIcon icon={brands('js')}  size="3x" className="js-icon"/></p>
       <p><FontAwesomeIcon icon={brands('css3')}  size="3x" className="css-icon"/></p>    
