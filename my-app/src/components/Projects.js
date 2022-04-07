@@ -101,7 +101,7 @@ function Projects() {
         <MDBCardText>
           Another movie-viewing application, but written in Angular.
         </MDBCardText>
-        <NavLink to="/produce-supplier"><MDBBtn href='#' color='success'>Details</MDBBtn></NavLink>
+        <NavLink to="/angular-movies"><MDBBtn href='#' color='success'>Details</MDBBtn></NavLink>
       </MDBCardBody>
     </MDBCard>  
     </div>
