@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../components/Footer';
 import ParticleBackground from './Particles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { brands } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import 'animate.css';
 
 function Home() {
@@ -15,7 +15,8 @@ function Home() {
          </div>                      
          <div className="button-links">
          <a href="https://github.com/Sieroslawski" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={brands('github-alt')} /> Github</a>
-         <a href="https://www.linkedin.com/in/adrian-sieroslawski-7aa411228/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={brands('linkedin')} /> LinkedIn</a>       
+         <a href="https://www.linkedin.com/in/adrian-sieroslawski-7aa411228/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={brands('linkedin')} /> LinkedIn</a>
+         <a href="mailto:adrian.sieroslawski@gmail.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={solid('envelope')} /> Email</a>      
          </div>        
          <div className="footer">                 
         </div>        
