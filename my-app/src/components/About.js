@@ -16,7 +16,7 @@ function About() {
         <div className="about-wrapper animate__animated animate__fadeIn">                     
         <div className="description">
         <h1 className="title-description">About Me</h1>               
-        <p>Hey, I'm Adrian. I've always been someone who enjoyed tinkering with computers and software, which has led me down the path of pursuing software development</p>
+        <p>Hey, I'm Adrian. I've always been someone who enjoyed tinkering with computers and software, which has led me down the path of pursuing software development.</p>
         <p> I initially began by watching tutorials online about basic web development, and decided I wanted to pursue more formal and in-depth training in full-stack development. That decision
           lead me to becoming a graduate at the Software Systems Developer (2022) program at BCIT. In this program we gained hands-on experience developing
            a number of RESTful applications with the technologies listed below.

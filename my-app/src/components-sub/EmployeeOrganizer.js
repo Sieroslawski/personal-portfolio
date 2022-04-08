@@ -23,7 +23,7 @@ function EmployeeOrganizer() {
       <article className="project-overview animate__animated animate__fadeIn">
         <h1>Overview</h1>
         <p>Employee-Organizer was the final project I developed for our C# courses. This command line program allows you to
-          perform CRUD operations using LINQ queries to organize the employees in an organization, as well as add create new organizations.
+          perform CRUD operations using LINQ queries to organize the employees in an organization, as well as create new organizations.
         </p>
       </article>
       <article className="project-features animate__animated animate__fadeIn">

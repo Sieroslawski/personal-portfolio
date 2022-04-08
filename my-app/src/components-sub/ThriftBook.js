@@ -25,7 +25,7 @@ function ThriftBook() {
       <article className="project-overview animate__animated animate__fadeIn">
         <h1>Overview</h1>
         <p>This is a project developed by my self and three other students using MVC in ASP.net + SQL backend with CSS + Bootstrap for styling. 
-          It's a fully functioning used book store that uses paypal to allow you to purchase books, with all other features you would find in an online store.</p>
+          It's a fully functioning used book store that uses paypal to allow you to purchase books, and contains all other features you would find in an online store.</p>
       </article>
       <article className="project-features animate__animated animate__fadeIn">
          <h1>Features</h1>

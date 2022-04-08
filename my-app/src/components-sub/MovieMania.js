@@ -25,7 +25,7 @@ function MovieMania() {
        <article className="project-overview">
          <h1>Overview</h1>
          <p>Movie-Mania is a project I developed for the final portion of our front-end React courses in SSD. 
-           Movie-Mania allows you to get movies using the TMDB API and sort by different genres and add them to your favorites using local storage, as well as remove them.</p>
+           Movie-Mania allows you to get movies using the TMDB API and sort by different genres and add them to your favorites using local storage as well as remove them.</p>
        </article>
        <article className="project-features">
           <h1>Features</h1>
