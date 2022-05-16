@@ -224,6 +224,21 @@
     text-align: center;   
 }
 
+@mixin home-large {
+    box-sizing: border-box;
+    padding: 10rem 1rem;
+    margin-left: 15rem;   
+    position: relative;
+    z-index: 5;
+    display: block;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;   
+}
+
 @mixin home-small {
     box-sizing: border-box;
     padding: 10rem 1rem;
