@@ -18,8 +18,8 @@ function About() {
         <h1 className="title-description">About Me</h1>               
         <p>Hey, I'm Adrian. I've always been someone who enjoyed tinkering with computers and software, which has led me down the path of pursuing software development.</p>
         <p> I initially began by watching tutorials online about basic web development, and decided I wanted to pursue more formal and in-depth training in full-stack development. That decision
-          lead me to becoming a graduate at the Software Systems Developer (2022) program at BCIT. With my newly acquired skillset, which ranges from ReactJS and Angular to NodeJS and C#, I've gained a focus on
-          writing clean, high-quality and well-organized code by creating intuitive user experiences and efficient back-end services.          
+           lead me to becoming a graduate at the Software Systems Developer (2022) program at BCIT. With my acquired skillset, which ranges from ReactJS and Angular to NodeJS and C#, 
+           I've learned to write clean, and properly organized code which allows me to create smooth user experiences, as well as swift and secure back-end services.         
         </p>
         <h2 className="title-description">Skills</h2>
         <div className="skill-container">                    
