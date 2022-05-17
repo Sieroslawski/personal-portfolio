@@ -10,6 +10,7 @@ import PageEmployeeOrganizer from '../pages-sub/PageEmployeeOrganizer';
 import PageProduceSupplier from '../pages-sub/PageProduceSupplier';
 import PageThriftBook from '../pages-sub/PageThriftBook';
 import PageWeatherView from '../pages-sub/PageWeatherViewer';
+import PageRateMeow from '../pages-sub/PageRateMeow';
 
 function AppRouter() {
   return (
@@ -24,6 +25,7 @@ function AppRouter() {
         <Route path="/produce-supplier" element={<PageProduceSupplier/>}/>
         <Route path="/thrift-book" element={<PageThriftBook/>}/>
         <Route path="/weather-viewer" element={<PageWeatherView/>}/>
+        <Route path="/rate-meow" element={<PageRateMeow/>}/>
         <Route path="*" element={<PageError/>}/>
     </Routes>
     </BrowserRouter>

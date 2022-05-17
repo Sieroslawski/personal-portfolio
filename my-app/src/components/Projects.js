@@ -9,6 +9,7 @@ import weatherimg from '../images/wv.jpeg'
 import books from '../images/books.png'
 import ps from '../images/ps.png'
 import am from '../images/am.jpeg';
+import cat from '../images/cat.jpeg';
 
 function Projects() {
 
@@ -37,6 +38,21 @@ function Projects() {
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
+        <MDBCardImage  src={cat} fluid alt='...'/>
+        <a>
+          <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
+        </a>
+      </MDBRipple>
+      <MDBCardBody>
+        <MDBCardTitle>Rate-Meow</MDBCardTitle>
+        <MDBCardText>
+         A serverless app for rating cats using AWS + DynamoDB, where users can comment and create posts.
+        </MDBCardText>
+        <NavLink to="/rate-meow"><MDBBtn href='/rate-meow' color='success'>Details</MDBBtn></NavLink>
+      </MDBCardBody>
+    </MDBCard>  
+    <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
+      <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
         <MDBCardImage src={employeeOrganizer} fluid alt='...' />
         <a>
           <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
@@ -47,7 +63,7 @@ function Projects() {
         <MDBCardText>
           Used LINQ queries and C# to create an employee management system with a SQLite database.
         </MDBCardText>
-        <NavLink to="/employee-organizer"><MDBBtn href='#' color='success'>Details</MDBBtn></NavLink>
+        <NavLink to="/employee-organizer"><MDBBtn href='/employee-organizer' color='success'>Details</MDBBtn></NavLink>
       </MDBCardBody>
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
@@ -62,7 +78,7 @@ function Projects() {
         <MDBCardText>
           A weather viewing application written in vanilla Javascript.
         </MDBCardText>
-        <NavLink to="/weather-viewer"><MDBBtn href='#' color='success'>Details</MDBBtn></NavLink>
+        <NavLink to="/weather-viewer"><MDBBtn href='/weather-viewer' color='success'>Details</MDBBtn></NavLink>
       </MDBCardBody>
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
@@ -77,7 +93,7 @@ function Projects() {
         <MDBCardText>
           An MVC project created by four students with a multitude of features.
         </MDBCardText>
-        <NavLink to="/thrift-book"><MDBBtn href='#' color='success'>Details</MDBBtn></NavLink>
+        <NavLink to="/thrift-book"><MDBBtn href='/thrift-book' color='success'>Details</MDBBtn></NavLink>
       </MDBCardBody>
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
@@ -92,7 +108,7 @@ function Projects() {
         <MDBCardText>
           A program to manage suppliers and produce written in Angular, with a C# backend.
         </MDBCardText>
-        <NavLink to="/produce-supplier"><MDBBtn href='#' color='success'>Details</MDBBtn></NavLink>
+        <NavLink to="/produce-supplier"><MDBBtn href='/produce-supplier' color='success'>Details</MDBBtn></NavLink>
       </MDBCardBody>
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
@@ -107,9 +123,9 @@ function Projects() {
         <MDBCardText>
           Another movie-viewing application, but written in Angular.
         </MDBCardText>
-        <NavLink to="/angular-movies"><MDBBtn href='#' color='success'>Details</MDBBtn></NavLink>
+        <NavLink to="/angular-movies"><MDBBtn href='/angular-movies' color='success'>Details</MDBBtn></NavLink>
       </MDBCardBody>
-    </MDBCard>  
+    </MDBCard>   
     </div>
    </section>
   )
