@@ -2,7 +2,9 @@
 @use '../utilities/mixins' as *;
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Fredoka:wght@300;400&family=Lato&family=Pacifico&display=swap');
 
-
+html {
+    background-color: rgb(92, 90, 90);   
+}
 .about {
     background-color: rgb(92, 90, 90);    
     background-repeat: no-repeat;
@@ -20,6 +22,7 @@
  
     h1 {
         margin: 0;
+        margin-bottom: 20px;
                
     }
     h1,h2 {
@@ -60,7 +63,7 @@
         grid-template-columns: 1fr 1fr;
         list-style: none;
         margin: 1rem 0 0;
-        padding: 0;
+        padding: 20px;       
     }
 
 }
@@ -98,6 +101,12 @@
     .about-wrapper {     
         padding-left: 10px;
         padding-right: 10px;    
+    }
+  }
+
+  @media only screen and (min-width: 3000px) {
+    .about-wrapper {     
+        min-height: 1200px;     
     }
   }
 
@@ -154,7 +163,7 @@
 
   @media only screen and (max-width: 480px) {
     .about-wrapper {     
-        min-height: 1700px;     
+        min-height: 1700px;       
     }
   }
 
