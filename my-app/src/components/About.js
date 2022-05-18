@@ -55,7 +55,7 @@ function About() {
         <div className="headshot">
             <img src={image} alt="portfolio"></img> 
         </div>                      
-    </div>
+    </div>   
     </section>
   )
 }

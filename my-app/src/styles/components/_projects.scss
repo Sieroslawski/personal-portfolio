@@ -1,6 +1,7 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
+
 .projects {
     background-color: rgb(92, 90, 90);    
     background-repeat: no-repeat;
@@ -21,6 +22,10 @@
         margin-left: 5em;
         font-size: 3em;
         font-family: 'Cairo', sans-serif    
+    }
+    .scroll {
+       
+       
     }
 }
 
@@ -83,7 +88,8 @@
         height: 100%!important;
         margin: 0!important;
         box-sizing: border-box!important;
-        overflow-y: visible;      
+        overflow-y: visible;
+        scroll-margin-top: 100px!important; 
         
      }
 }
@@ -112,7 +118,7 @@
 
 @media only screen and (max-width: 1920px) {   
     .projects {     
-        min-height: 2700px!important;     
+        // min-height: 2700px!important;     
     }
     .cards-wrapper {
         margin-top: 57em!important;   

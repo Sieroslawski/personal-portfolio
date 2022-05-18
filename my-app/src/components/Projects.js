@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage, MDBBtn, MDBRipple } from 'mdb-react-ui-kit';
 import 'animate.css';
 import movieManiaReact from '../images/movie-mania.jpeg';
@@ -13,8 +13,10 @@ import cat from '../images/cat.jpeg';
 
 function Projects() {
 
+
+
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0)   
   }, [])
 
   return (
@@ -125,8 +127,10 @@ function Projects() {
         </MDBCardText>
         <NavLink to="/angular-movies"><MDBBtn href='/angular-movies' color='success'>Details</MDBBtn></NavLink>
       </MDBCardBody>
-    </MDBCard>   
+    </MDBCard>
+ 
     </div>
+    
    </section>
   )
 }
