@@ -4,6 +4,7 @@ import fullScreen from '../images/thriftbook-desktop.png'
 import phone from '../images/thriftbook-phone.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import ReactTooltip from 'react-tooltip';
 import 'animate.css';
 
 function ThriftBook() {
@@ -17,14 +18,16 @@ function ThriftBook() {
     <div className="projects-wrapper animate__animated animate__fadeIn" id="pj">
       <header className="projects-header">
       <h1>ThriftBook</h1>
-      <a href="https://github.com/Sieroslawski" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
-      <a href="#"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
+      <a href="https://github.com/tingdeng86/ThriftBook_phase2" target="_blank" rel="noopener noreferrer" data-tip data-for="git"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
+      <a href="https://thriftbookusedbookstoreapp.azurewebsites.net/" data-tip data-for="website"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
+      <ReactTooltip id="git" place="bottom" effect="solid">View Repository</ReactTooltip>
+       <ReactTooltip id="website" place="bottom" effect="solid">Live Site</ReactTooltip>
       </header>
       <img src={fullScreen} className="fullscreen-img animate__animated animate__fadeIn" id="full-screen"/>
        <img src={phone}  id="phone-img"/>         
       <article className="project-overview animate__animated animate__fadeIn">
         <h1>Overview</h1>
-        <p>This is a project developed by my self and three other students using MVC in ASP.net + SQL backend with CSS + Bootstrap for styling. 
+        <p>This is a project developed by my self and three other students using MVC with Razer Pages in ASP.net + SQL backend with CSS + Bootstrap for styling. 
           It's a fully functioning used book store that uses paypal to allow you to purchase books, and contains all other features you would find in an online store.</p>
       </article>
       <article className="project-features animate__animated animate__fadeIn">

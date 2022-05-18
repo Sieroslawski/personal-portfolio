@@ -4,6 +4,7 @@ import fullScreen from '../images/full-generic.png'
 import phone from '../images/cat-phone.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import ReactTooltip from 'react-tooltip';
 import 'animate.css';
 
 function RateMeow() {
@@ -17,8 +18,10 @@ function RateMeow() {
      <div className="projects-wrapper">
        <header className="projects-header animate__animated animate__fadeIn">
        <h1>Rate Meow</h1>
-       <a href="https://github.com/Sieroslawski/cat-adoption-app" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
-       <a href="https://master.d1t1iw51a60mr9.amplifyapp.com/"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
+       <a href="https://github.com/Sieroslawski/cat-adoption-app" target="_blank" rel="noopener noreferrer"  data-tip data-for="git"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
+       <a href="https://master.d1t1iw51a60mr9.amplifyapp.com/"  data-tip data-for="website"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
+       <ReactTooltip id="git" place="bottom" effect="solid">View Repository</ReactTooltip>
+       <ReactTooltip id="website" place="bottom" effect="solid">Live Site</ReactTooltip>
        </header>
        <img src={fullScreen} className="fullscreen-img animate__animated animate__fadeIn" id="full-screen"/>       
        <img src={phone} className="phone-img animate__animated animate__fadeIn" id="phone-img"/>        

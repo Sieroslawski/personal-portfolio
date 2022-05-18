@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import phone from '../images/ps-phone.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import ReactTooltip from 'react-tooltip';
 import 'animate.css';
 
 function ProduceSupplier() {
@@ -17,15 +18,17 @@ function ProduceSupplier() {
     <div className="projects-wrapper animate__animated animate__fadeIn" id="ps">
       <header className="projects-header">
       <h1>Produce-Supplier</h1>
-      <a href="https://github.com/Sieroslawski" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
-      <a href="#"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
+      <a href="https://github.com/Sieroslawski/ProduceSupplier-Backend" target="_blank" rel="noopener noreferrer" data-tip data-for="backend"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
+      <a href="https://github.com/Sieroslawski/ProduceSupplier-Frontend" target="_blank" rel="noopener noreferrer" data-tip data-for="frontend"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
+      <ReactTooltip id="backend" place="bottom" effect="solid">Backend</ReactTooltip>
+      <ReactTooltip id="frontend" place="bottom" effect="solid">Frontend</ReactTooltip>
       </header>
       <img src={fullScreen} className="fullscreen-img" id="full-screen"/>
        <img src={phone}  id="phone-img"/>            
       <article className="project-overview">
         <h1>Overview</h1>
         <p>Implemented an ASP.NET Core API backend (with SQL) 
-          and an Angular frontend to create a functional and user-friendly customer ordering management system.</p>
+          and an Angular frontend to create a functional and user-friendly customer ordering management system to perform CRUD operations.</p>
       </article>
       <article className="project-features">
          <h1>Features</h1>

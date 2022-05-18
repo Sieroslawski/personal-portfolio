@@ -4,6 +4,7 @@ import fullScreen from '../images/full.png'
 import phone from '../images/phone.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import ReactTooltip from 'react-tooltip';
 import 'animate.css';
 
 function MovieMania() {
@@ -17,8 +18,10 @@ function MovieMania() {
      <div className="projects-wrapper animate__animated animate__fadeIn" id="movie-mania">
        <header className="projects-header">
        <h1>Movie Mania</h1>
-       <a href="https://github.com/Sieroslawski" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
-       <a href="#"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
+       <a href="https://github.com/Sieroslawski/Movie-Application" target="_blank" rel="noopener noreferrer" data-tip data-for="git"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
+       <a href="#" data-tip data-for="website"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
+       <ReactTooltip id="git" place="bottom" effect="solid">View Repository</ReactTooltip>
+       <ReactTooltip id="website" place="bottom" effect="solid">Live Site</ReactTooltip>
        </header>
        <img src={fullScreen} className="fullscreen-img" id="full-screen"/>
        <img src={phone}  id="phone-img"/>          

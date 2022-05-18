@@ -3,6 +3,7 @@ import tablet from '../images/tablet.png'
 import { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import ReactTooltip from 'react-tooltip';
 import 'animate.css';
 
 function EmployeeOrganizer() {
@@ -16,21 +17,21 @@ function EmployeeOrganizer() {
     <div className="projects-wrapper">
       <header className="projects-header animate__animated animate__fadeIn">
       <h1>Employee Organizer</h1>
-      <a href="https://github.com/Sieroslawski" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
-      <a href="#"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
+      <a href="https://github.com/Sieroslawski/Employee-Organizer" target="_blank" rel="noopener noreferrer" data-tip data-for="git"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
+      <ReactTooltip id="git" place="bottom" effect="solid">View Repository</ReactTooltip>     
       </header>     
       <img src={tablet} className="tablet-img" className="fullscreen-img animate__animated animate__fadeIn" id="employee-org-img"/>            
       <article className="project-overview animate__animated animate__fadeIn">
         <h1>Overview</h1>
         <p>Employee-Organizer was the final project I developed for our C# courses. This command line program allows you to
-          perform CRUD operations using LINQ queries to organize the employees in an organization, as well as create new organizations.
+          perform CRUD operations using LINQ queries with Microsoft's Entity Framework to organize the employees in an organization, as well as create new employees.
         </p>
       </article>
       <article className="project-features animate__animated animate__fadeIn">
          <h1>Features</h1>
          <ul>
            <li>Create, read, update, delete employees in an database.</li>
-           <li>Add organizations.</li>   
+           <li>View all organizations, view all employees within each organization</li>          
          </ul>
       </article>
       <article className="project-tech animate__animated animate__fadeIn">     
