@@ -19,7 +19,7 @@ function AngularMovies() {
        <header className="projects-header animate__animated animate__fadeIn">
        <h1>Angular Movies</h1>
        <a href="https://github.com/Sieroslawski/Angular-Movies" target="_blank" rel="noopener noreferrer" data-tip data-for="git"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
-       <a href="#" data-tip data-for="website"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
+       <a href="https://main--merry-fox-b557fc.netlify.app/home" target="_blank" data-tip data-for="website"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
        <ReactTooltip id="git" place="bottom" effect="solid">View Repository</ReactTooltip>
        <ReactTooltip id="website" place="bottom" effect="solid">Live Site</ReactTooltip>
        </header>

@@ -18,7 +18,7 @@ function WeatherViewer() {
       <header className="projects-header animate__animated animate__fadeIn">
       <h1>Weather Viewer</h1>
       <a href="https://github.com/Sieroslawski/weatherwebsite" target="_blank" rel="noopener noreferrer" data-tip data-for="git"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
-      <a href="#" data-tip data-for="website"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
+      <a href="https://628a82225a97cd13bf54ec97--cosmic-capybara-c75a2b.netlify.app/sevenday.html" data-tip data-for="website"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
       <ReactTooltip id="git" place="bottom" effect="solid">View Repository</ReactTooltip>
        <ReactTooltip id="website" place="bottom" effect="solid">Live Site</ReactTooltip>
       </header>         
