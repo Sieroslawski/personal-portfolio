@@ -19,7 +19,7 @@ function MovieMania() {
        <header className="projects-header">
        <h1>Movie Mania</h1>
        <a href="https://github.com/Sieroslawski/Movie-Application" target="_blank" rel="noopener noreferrer" data-tip data-for="git"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
-       <a href="#" data-tip data-for="website"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
+       <a href="https://main--jolly-lolly-86adff.netlify.app/" target="_blank" data-tip data-for="website"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
        <ReactTooltip id="git" place="bottom" effect="solid">View Repository</ReactTooltip>
        <ReactTooltip id="website" place="bottom" effect="solid">Live Site</ReactTooltip>
        </header>

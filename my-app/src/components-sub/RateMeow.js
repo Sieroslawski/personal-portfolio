@@ -19,7 +19,7 @@ function RateMeow() {
        <header className="projects-header animate__animated animate__fadeIn">
        <h1>Rate Meow</h1>
        <a href="https://github.com/Sieroslawski/cat-adoption-app" target="_blank" rel="noopener noreferrer"  data-tip data-for="git"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
-       <a href="https://master.d1t1iw51a60mr9.amplifyapp.com/"  data-tip data-for="website"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
+       <a href="https://master.d1t1iw51a60mr9.amplifyapp.com/" target="_blank" data-tip data-for="website"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
        <ReactTooltip id="git" place="bottom" effect="solid">View Repository</ReactTooltip>
        <ReactTooltip id="website" place="bottom" effect="solid">Live Site</ReactTooltip>
        </header>
