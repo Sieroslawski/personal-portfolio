@@ -113,3 +113,25 @@ canvas {
         @include home-smallest;
     }
   }
+
+  @media only screen and (max-width: 375px) {
+    .content-wrapper {
+      box-sizing: border-box;
+     padding-top: 120px!important;
+      padding-left: 40px;
+      margin-left: 5rem;
+      position: relative;
+      z-index: 5;
+      display: block;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+      align-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+      .home-text, .button-links {
+        padding-top: 0!important;
+      }
+        @include home-smallest;
+    }
+  }
