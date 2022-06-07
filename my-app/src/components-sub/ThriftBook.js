@@ -18,10 +18,8 @@ function ThriftBook() {
     <div className="projects-wrapper animate__animated animate__fadeIn" id="pj">
       <header className="projects-header">
       <h1>ThriftBook</h1>
-      <a href="https://github.com/tingdeng86/ThriftBook_phase2" target="_blank" rel="noopener noreferrer" data-tip data-for="git"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
-      <a href="https://thriftbookusedbookstoreapp.azurewebsites.net/" data-tip data-for="website"><FontAwesomeIcon icon={solid('paperclip')}  size="3x"/></a>
-      <ReactTooltip id="git" place="bottom" effect="solid">View Repository</ReactTooltip>
-       <ReactTooltip id="website" place="bottom" effect="solid">Live Site</ReactTooltip>
+      <a href="https://github.com/tingdeng86/ThriftBook_phase2" target="_blank" rel="noopener noreferrer" data-tip data-for="git"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>     
+      <ReactTooltip id="git" place="bottom" effect="solid">View Repository</ReactTooltip>      
       </header>
       <img src={fullScreen} className="fullscreen-img animate__animated animate__fadeIn" id="full-screen"/>
        <img src={phone}  id="phone-img"/>         
