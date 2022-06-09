@@ -2,13 +2,17 @@
 @use '../utilities/mixins' as *;
 
 .header-wrapper {    
-    background-color: $nav-color;
-    @include nav;   
-    background-color: #1d1d1d;   
+   
+    @include nav;      
     color: $text-color-light;
+    position: relative;
 
     li {
         list-style: none;
+        padding: 10px;
+    }
+    ul{
+      padding: 0;
     }
     a:link {
         text-decoration: none;
@@ -29,15 +33,18 @@
       }           
       #initials {
           font-size: 70px;
-          height: 4em;
-          padding-left:0.5em;          
-          margin: 0;         
+          
+                
       }
       #initials:hover {
         text-decoration: none;        
       }
      nav {
          font-size: 20px;
+        
+     }
+     .ul-container {
+       display: flex;      
      }         
 }
 //Media queries

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
+import ParticleBackground from '../components/Particles'
 import fullScreen from '../images/thriftbook-desktop.png'
 import phone from '../images/thriftbook-phone.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -61,6 +62,7 @@ function ThriftBook() {
       <p><FontAwesomeIcon icon={brands('css3')}  size="3x" className="css-icon"/></p>
       </article>
     </div>
+    <ParticleBackground className="particles"/>  
   </section>
   )
 }

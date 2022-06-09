@@ -1,6 +1,7 @@
 import React from 'react'
 import fullScreen from '../images/ps-desktop.png'
 import { useEffect } from 'react'
+import ParticleBackground from '../components/Particles'
 import phone from '../images/ps-phone.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
@@ -57,6 +58,7 @@ function ProduceSupplier() {
       <p><FontAwesomeIcon icon={solid('database')}  size="3x" className="sql-icon"/></p>
       </article>
     </div>
+    <ParticleBackground className="particles"/>  
   </section>
   )
 }

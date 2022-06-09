@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import tablet from '../images/weather-tablet.png'
+import ParticleBackground from '../components/Particles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import ReactTooltip from 'react-tooltip';
@@ -44,6 +45,7 @@ function WeatherViewer() {
       <p><FontAwesomeIcon icon={brands('css3')}  size="3x" className="css-icon"/></p>    
       </article>
     </div>
+    <ParticleBackground className="particles"/>  
   </section>
   )
 }

@@ -13,13 +13,10 @@ html {
 }
 
 .about-wrapper {
-    @include about;    
-    min-height: 1450px;
-    height: 100vh;
+    @include about;       
     font-family: 'Fredoka', sans-serif;
-    min-height: 1200px;
+    min-height: 1200px;  
 
- 
     h1 {
         margin: 0;
         margin-bottom: 20px;
@@ -36,16 +33,13 @@ html {
         font-family: 'Cairo', sans-serif;
         min-width: 130px;
     }   
-    .headshot {
-        width: 300px;
-        margin-top: 4.5em;
+    .headshot img {
+        width: 200px;        
         box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.41);
-          
-    }
+        border-radius: 50%;
+    }  
     .description {
-        width: 40%;
-        display: inline-block;
-        padding-bottom: 50px;     
+        width: 50%;                    
     }
     .skill-container { 
         p {
@@ -66,121 +60,59 @@ html {
         padding: 10px;       
     }
 
-}
-//Media query
-@media only screen and (max-width: $desktopMedium) {
-    .about-wrapper {     
-        @include about-medium;
-    }
-  }
-  @media only screen and (max-width: $tabletLandscape) {
-    .about-wrapper {     
-        @include about-small;
-
-        .description {
-            width: 100%;
-            padding: 20px;       
-        }
-        .headshot {
-            margin: 0 auto;
-        }
-    }    
-  }
-
-  @media only screen and (max-width: $tabletPortrait) {
-    .about-wrapper {     
-        margin-left: 6rem;
-        .headshot {
-            width: 200px;
-            margin-top: 10px;                                          
-        }
-    }
-  }
-
-  @media only screen and (max-width: $smallPhone) {
-    .about-wrapper {     
-        padding-left: 10px;
-        padding-right: 10px;    
-    }
-  }
-
-  @media only screen and (min-width: 3000px) {
-    .about-wrapper {     
-        min-height: 1200px;     
-    }
-  }
-
-  @media only screen and (max-width: 1636px) {
-    .about-wrapper {     
-        min-height: 1200px;     
-    }
-  }
-
-  @media only screen and (max-width: 1375px) {
-    .about-wrapper {     
-        min-height: 1300px;     
-    }
-  }
-
-  @media only screen and (max-width: 1093px) {
-    .about-wrapper {     
-        min-height: 1650px;     
-    }
-  }
-
-  @media only screen and (max-width: 1036px) {
-    .about-wrapper {     
-        min-height: 1550px;     
+    .about-me {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
     .headshot {
-        margin-top: 20px!important;
+        display: contents;
     }
-  }
+    .paragraphs {
+        border-left: 3px solid #5cb85c;
+        padding: 10px;
+    }
 
-  @media only screen and (max-width: 871px) {
-    .about-wrapper {     
-        min-height: 1950px;     
+    .title-description {
+        margin-top: 30px;
     }
-  }
 
-  @media only screen and (max-width: 810px) {
-    .about-wrapper {     
-        min-height: 1800px;     
+}
+.paragraphs, .headshot {
+    flex: 1;
+}
+//Media query
+@media only screen and (max-width: 800px) {
+    .about-wrapper { 
+    .description {
+        width: 80%;                   
     }
-  }
+}
+}
 
-  @media only screen and (max-width: 562px) {
-    .about-wrapper {     
-        min-height: 2200px;     
+@media only screen and (max-width: 585px) {
+    .about-wrapper { 
+    .description {
+        width: 80%;                      
     }
-  }
+    .headshot img {
+        margin: 55px;
+    }
+}
+}
 
-  @media only screen and (max-width: 539px) {
-    .about-wrapper {     
-        min-height: 1900px;     
+@media only screen and (max-width: 500px) {
+    .about-wrapper { 
+    .description {
+        width: 80%; 
+        margin-top: 2em;
+        margin-bottom: 2em;                 
     }
-  }
-
-  @media only screen and (max-width: 480px) {
-    .about-wrapper {     
-        min-height: 1700px;
-        
-        .skill-container {
-            padding: 0px;
-        }
-    }
-  }
-
-  @media only screen and (max-width: 375px) {
-    .about-wrapper {     
-        min-height: 1900px;
-        
-        .skill-container {
-            padding: 0px;
-            display: inline;
-        }
-    }
-  }
+}
+}
 
   .html5-icon {
       color: orange;

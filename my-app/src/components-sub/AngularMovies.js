@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import fullScreen from '../images/angular-movies-desktop.png'
 import phone from '../images/angular-movies-phone.png'
+import ParticleBackground from '../components/Particles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import ReactTooltip from 'react-tooltip';
@@ -46,6 +47,7 @@ function AngularMovies() {
        <p><FontAwesomeIcon icon={brands('css3')}  size="3x" className="css-icon"/></p>           
        </article>
      </div>
+     <ParticleBackground className="particles"/>  
    </section>
   )
 }

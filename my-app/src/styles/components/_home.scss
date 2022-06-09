@@ -31,7 +31,7 @@ canvas {
 }
 
 * { z-index: 2; }
-.particles, .particle > canvas { z-index: 1 !important; }
+.particles, .particle > canvas { z-index: -1 !important; position: fixed;}
 
 
 .button-links {      
@@ -76,15 +76,6 @@ canvas {
 }
 
 //Media Queries
-
-@media only screen and (min-width: 2400px) {
-  .content-wrapper {
-    .home-text, .button-links {
-      padding-top: 20em!important;    
-  }
-}
-}
-
 @media only screen and (max-width: $tabletPortrait) {
     .content-wrapper {
         h1 {
@@ -117,9 +108,7 @@ canvas {
   @media only screen and (max-width: 375px) {
     .content-wrapper {
       box-sizing: border-box;
-     padding-top: 120px!important;
-      padding-left: 40px;
-      margin-left: 5rem;
+      padding-top: 120px!important;           
       position: relative;
       z-index: 5;
       display: block;

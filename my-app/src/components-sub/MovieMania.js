@@ -4,6 +4,7 @@ import fullScreen from '../images/full.png'
 import phone from '../images/phone.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import ParticleBackground from '../components/Particles'
 import ReactTooltip from 'react-tooltip';
 import 'animate.css';
 
@@ -36,7 +37,8 @@ function MovieMania() {
             <li>Add / Remove from favorites using local storage.</li>            
             <li>Sort by genre.</li>
             <li>Fully responive.</li>
-            <li>Display a message if a movie doesn't have a poster.</li>           
+            <li>Display a message if a movie doesn't have a poster.</li>
+            <li>Search bar for movies, not visible in images as it was added in later.</li>
           </ul>
        </article>
        <article className="project-tech" id="pt-mm">
@@ -46,6 +48,7 @@ function MovieMania() {
        <p><FontAwesomeIcon icon={brands('react')}  size="3x" className="react-icon"/></p>       
        </article>
      </div>
+     <ParticleBackground className="particles"/>  
    </section>
   )
 }

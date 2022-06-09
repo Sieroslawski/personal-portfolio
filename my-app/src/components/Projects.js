@@ -1,7 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage, MDBBtn, MDBRipple } from 'mdb-react-ui-kit';
+import ParticleBackground from './Particles';
+import ScrollToTop from "react-scroll-to-top";
 import 'animate.css';
 import movieManiaReact from '../images/movie-mania.jpeg';
 import employeeOrganizer  from '../images/eo.png'
@@ -13,16 +15,17 @@ import cat from '../images/cat.jpeg';
 
 function Projects() {
 
-
-
   useEffect(() => {
     window.scrollTo(0, 0)   
   }, [])
 
   return (
    <section className="projects">
+   <ScrollToTop smooth color="#5cb85c"/>
+   <ParticleBackground className="particles"/>  
     <h1 id="projects-header">Projects</h1>
-   <div className="cards-wrapper animate__animated animate__fadeIn">     
+   <div className="cards-wrapper animate__animated animate__fadeIn">
+  
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
       <MDBCardImage src={movieManiaReact} fluid alt='...' />    
@@ -55,17 +58,17 @@ function Projects() {
     </MDBCard>  
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-        <MDBCardImage src={employeeOrganizer} fluid alt='...' />
+        <MDBCardImage src={books} fluid alt='...' />
         <a>
           <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
         </a>
       </MDBRipple>
       <MDBCardBody>
-        <MDBCardTitle>Employee Organizer</MDBCardTitle>
+        <MDBCardTitle>ThriftBook</MDBCardTitle>
         <MDBCardText>
-          Used LINQ queries and C# to create an employee management system with a SQLite database.
+          An MVC project created by four students with a multitude of features.
         </MDBCardText>
-        <NavLink to="/employee-organizer"><MDBBtn href='/employee-organizer' color='success'>Details</MDBBtn></NavLink>
+        <NavLink to="/thrift-book"><MDBBtn href='/thrift-book' color='success'>Details</MDBBtn></NavLink>
       </MDBCardBody>
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
@@ -82,20 +85,20 @@ function Projects() {
         </MDBCardText>
         <NavLink to="/weather-viewer"><MDBBtn href='/weather-viewer' color='success'>Details</MDBBtn></NavLink>
       </MDBCardBody>
-    </MDBCard>
+    </MDBCard>   
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-        <MDBCardImage src={books} fluid alt='...' />
+        <MDBCardImage src={employeeOrganizer} fluid alt='...' />
         <a>
           <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
         </a>
       </MDBRipple>
       <MDBCardBody>
-        <MDBCardTitle>ThriftBook</MDBCardTitle>
+        <MDBCardTitle>Employee Organizer</MDBCardTitle>
         <MDBCardText>
-          An MVC project created by four students with a multitude of features.
+          Used LINQ queries and C# to create an employee management system with a SQLite database.
         </MDBCardText>
-        <NavLink to="/thrift-book"><MDBBtn href='/thrift-book' color='success'>Details</MDBBtn></NavLink>
+        <NavLink to="/employee-organizer"><MDBBtn href='/employee-organizer' color='success'>Details</MDBBtn></NavLink>
       </MDBCardBody>
     </MDBCard>
     <MDBCard style={{ maxWidth: '22rem' }} className="card-component">
@@ -128,10 +131,10 @@ function Projects() {
         <NavLink to="/angular-movies"><MDBBtn href='/angular-movies' color='success'>Details</MDBBtn></NavLink>
       </MDBCardBody>
     </MDBCard>
- 
-    </div>
     
+    </div>       
    </section>
+   
   )
 }
 

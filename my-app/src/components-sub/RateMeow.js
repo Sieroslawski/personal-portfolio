@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import fullScreen from '../images/full-generic.png'
 import phone from '../images/cat-phone.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ParticleBackground from '../components/Particles'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import ReactTooltip from 'react-tooltip';
 import 'animate.css';
@@ -45,6 +46,7 @@ function RateMeow() {
        <p><FontAwesomeIcon icon={brands('css3')}  size="3x" className="css-icon"/></p>           
        </article>
      </div>
+     <ParticleBackground className="particles"/>  
    </section>
   )
 }

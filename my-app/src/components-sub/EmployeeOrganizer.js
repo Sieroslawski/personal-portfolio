@@ -1,6 +1,7 @@
 import React from 'react'
 import tablet from '../images/tablet.png'
 import { useEffect } from 'react'
+import ParticleBackground from '../components/Particles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import ReactTooltip from 'react-tooltip';
@@ -44,6 +45,7 @@ function EmployeeOrganizer() {
       <p><FontAwesomeIcon icon={solid('database')}  size="3x" className="sql-icon"/></p> 
       </article>
     </div>
+    <ParticleBackground className="particles"/>  
   </section>
   )
 }
