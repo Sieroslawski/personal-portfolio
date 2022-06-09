@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import ParticleBackground from '../components/Particles'
 import fullScreen from '../images/thriftbook-desktop.png'
 import phone from '../images/thriftbook-phone.png'
+import ScrollToTop from "react-scroll-to-top";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import ReactTooltip from 'react-tooltip';
@@ -17,6 +18,7 @@ function ThriftBook() {
   return (
     <section>
     <div className="projects-wrapper animate__animated animate__fadeIn" id="pj">
+    <ScrollToTop smooth color="#5cb85c"/>
       <header className="projects-header">
       <h1>ThriftBook</h1>
       <a href="https://github.com/tingdeng86/ThriftBook_phase2" target="_blank" rel="noopener noreferrer" data-tip data-for="git"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>     

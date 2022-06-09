@@ -2,6 +2,7 @@ import React from 'react'
 import fullScreen from '../images/ps-desktop.png'
 import { useEffect } from 'react'
 import ParticleBackground from '../components/Particles'
+import ScrollToTop from "react-scroll-to-top";
 import phone from '../images/ps-phone.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
@@ -17,6 +18,7 @@ function ProduceSupplier() {
   return (
     <section>
     <div className="projects-wrapper animate__animated animate__fadeIn" id="ps">
+    <ScrollToTop smooth color="#5cb85c"/>
       <header className="projects-header">
       <h1>Produce-Supplier</h1>
       <a href="https://github.com/Sieroslawski/ProduceSupplier-Backend" target="_blank" rel="noopener noreferrer" data-tip data-for="backend"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>

@@ -4,6 +4,7 @@ import tablet from '../images/weather-tablet.png'
 import ParticleBackground from '../components/Particles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import ScrollToTop from "react-scroll-to-top";
 import ReactTooltip from 'react-tooltip';
 import 'animate.css'
 
@@ -16,6 +17,7 @@ function WeatherViewer() {
   return (
     <section>
     <div className="projects-wrapper" id="wv">
+    <ScrollToTop smooth color="#5cb85c"/>
       <header className="projects-header animate__animated animate__fadeIn">
       <h1>Weather Viewer</h1>
       <a href="https://github.com/Sieroslawski/weatherwebsite" target="_blank" rel="noopener noreferrer" data-tip data-for="git"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>

@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import fullScreen from '../images/full.png'
 import phone from '../images/phone.png'
+import ScrollToTop from "react-scroll-to-top";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import ParticleBackground from '../components/Particles'
@@ -17,6 +18,7 @@ function MovieMania() {
   return (
    <section>
      <div className="projects-wrapper animate__animated animate__fadeIn" id="movie-mania">
+     <ScrollToTop smooth color="#5cb85c"/>
        <header className="projects-header">
        <h1>Movie Mania</h1>
        <a href="https://github.com/Sieroslawski/Movie-Application" target="_blank" rel="noopener noreferrer" data-tip data-for="git"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>

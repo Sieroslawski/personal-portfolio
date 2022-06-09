@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import fullScreen from '../images/full-generic.png'
 import phone from '../images/cat-phone.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ScrollToTop from "react-scroll-to-top";
 import ParticleBackground from '../components/Particles'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import ReactTooltip from 'react-tooltip';
@@ -17,6 +18,7 @@ function RateMeow() {
   return (
     <section>
      <div className="projects-wrapper">
+     <ScrollToTop smooth color="#5cb85c"/>
        <header className="projects-header animate__animated animate__fadeIn">
        <h1>Rate Meow</h1>
        <a href="https://github.com/Sieroslawski/cat-adoption-app" target="_blank" rel="noopener noreferrer"  data-tip data-for="git"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>

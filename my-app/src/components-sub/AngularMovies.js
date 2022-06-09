@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import fullScreen from '../images/angular-movies-desktop.png'
 import phone from '../images/angular-movies-phone.png'
 import ParticleBackground from '../components/Particles'
+import ScrollToTop from "react-scroll-to-top";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import ReactTooltip from 'react-tooltip';
@@ -17,6 +18,7 @@ function AngularMovies() {
   return (
     <section>
      <div className="projects-wrapper">
+     <ScrollToTop smooth color="#5cb85c"/>
        <header className="projects-header animate__animated animate__fadeIn">
        <h1>Angular Movies</h1>
        <a href="https://github.com/Sieroslawski/Angular-Movies" target="_blank" rel="noopener noreferrer" data-tip data-for="git"><FontAwesomeIcon icon={brands('github-alt')} size="3x"/></a>
