@@ -3,8 +3,8 @@ import Particles from 'react-tsparticles'
 
 const ParticleBackground = () => {
     return ( 
-    <div className="particle-bg">
-        <Particles
+   
+        <Particles id="mobile-particles"
             options={{
   "autoPlay": true,
   "background": {
@@ -344,7 +344,7 @@ const ParticleBackground = () => {
         "factor": 1000
       },
       "limit": 0,
-      "value": 100
+      "value": 50
     },
     "opacity": {
       "random": {
@@ -502,7 +502,7 @@ const ParticleBackground = () => {
   "zLayers": 100
 }}        
         />
-    </div>
+ 
     );
 }
 

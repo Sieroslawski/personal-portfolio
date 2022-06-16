@@ -16,14 +16,18 @@ function About() {
     <section className="about" >
     <div className="about-wrapper animate__animated animate__fadeIn">                     
     <div className="description">
-    <h1 className="title-description">About Me</h1>
+    <h1 className="title-description">About Me  <div className="headshot1">
+           <img src={image} alt="portfolio"></img> 
+        </div></h1>
+       
       <div className="about-me">             
         
-      <div className="paragraphs">             
+      <div className="paragraphs">
+                
         <p>Hey, I'm Adrian. I've always been someone who enjoyed tinkering with computers and software, which has led me down the path of pursuing software development.</p>
         <p> I initially began by watching tutorials online about basic web development, and decided I wanted to pursue more formal and in-depth training in full-stack development. That decision
            lead me to becoming a graduate at the Software Systems Developer (2022) program at BCIT.           
-        </p>
+        </p>        
         <p>From that program I developed a strong skillset in a few full-stack technologies such as React, Angular, C#
            using Agile methodologies, with a dual-focus on creating easy-to-understand UX as well as secure back-end services.</p>
       </div>

@@ -37,11 +37,14 @@ html {
         width: 200px;        
         box-shadow: 10px 10px 8px -2px rgba(0,0,0,0.41);
         border-radius: 50%;
+        margin: 10px;
     }  
     .description {
         width: 50%;                    
     }
     .skill-container { 
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%);
+        border-left: 3px solid #5cb85c;
         p {
             display: flex;
             flex-direction: row;
@@ -74,6 +77,7 @@ html {
     .paragraphs {
         border-left: 3px solid #5cb85c;
         padding: 10px;
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%);
     }
 
     .title-description {
@@ -85,6 +89,13 @@ html {
     flex: 1;
 }
 //Media query
+
+@media only screen and (min-width: 540px) { 
+    .headshot1 {
+        display: none;        
+    }  
+}
+
 @media only screen and (max-width: 800px) {
     .about-wrapper { 
     .description {
@@ -103,12 +114,29 @@ html {
     }
 }
 }
+@media only screen and (max-width: 540px) { 
+    .headshot {
+        display: none!important;       
+    } 
+    .headshot1 img {
+       width: 100px;
+       border-radius: 50%!important;
+    }
+
+    .title-description {
+        display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+}
 
 @media only screen and (max-width: 500px) {
     .about-wrapper { 
     .description {
-        width: 80%; 
-        margin-top: 2em;
+        width: 80%;       
         margin-bottom: 2em;                 
     }
 }
