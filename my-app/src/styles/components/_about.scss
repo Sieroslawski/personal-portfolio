@@ -119,7 +119,7 @@ html {
         display: none!important;       
     } 
     .headshot1 img {
-       width: 100px;
+       width: 75px;
        border-radius: 50%!important;
     }
 
@@ -130,7 +130,8 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    }
+    }   
+    
 }
 
 @media only screen and (max-width: 500px) {
